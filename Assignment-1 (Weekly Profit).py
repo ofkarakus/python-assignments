@@ -8,3 +8,5 @@ profit = deposit * 7 / 100 * 7
 total = deposit + profit
 
 print(total)
+
+# this is my first assignment.
