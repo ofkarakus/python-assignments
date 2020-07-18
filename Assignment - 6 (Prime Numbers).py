@@ -1,4 +1,4 @@
-num = int(input())
+num = int(input('Enter a number : '))
 prime_nums =  []
 
 for i in range(1, num+1):
