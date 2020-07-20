@@ -1,5 +1,10 @@
+# Task : Print the prime numbers which are between 1 to entered limit number (n).
+
+# You can use a nested for loop.
+# Collect all these numbers into a list
+
 num = int(input('Enter a number : '))
-prime_nums =  []
+prime_nums = []
 
 for i in range(2, num+1):
     for j in range(2, i):
