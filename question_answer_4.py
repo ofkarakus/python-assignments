@@ -4,6 +4,8 @@
 # Expected output:
 # [2, 11, 12, 45, 77, 99, 333, 999, 8982]
 
+# first answer
+
 ls = [999, 333, 2, 8982, 12, 45, 77, 99, 11]
 
 for i in range(len(ls)):
@@ -13,3 +15,13 @@ for i in range(len(ls)):
             ls[i] = ls[j]
             ls[j] = temp
 print(ls)
+
+# second answer
+
+ls = [999, 333, 2, 8982, 12, 45, 77, 99, 11]
+new_ls = []
+
+for i in range(len(ls)):
+    new_ls.append(min(ls))
+    ls.remove(min(ls))
+print(new_ls)
