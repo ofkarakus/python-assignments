@@ -4,7 +4,7 @@
 
 vowels = 'aeiou'
 consonants = 'bcdfghjklmnpqrstvwxyz'
-vows_cons = input('Enter a word, sentence, etc. : ')
+vows_cons = input('Enter a word, sentence, etc. : ').lower()
 vows_counter = 0
 cons_counter = 0
 
