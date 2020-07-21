@@ -13,11 +13,6 @@ def factorial(x):
 def permutation(n,r):
     return factorial(n) / factorial(n-r)
 
-# tests
-
-print(permutation(5,0))
-print(permutation(5,1))
-print(permutation(5,2))
-print(permutation(5,3))
-print(permutation(5,4))
-print(permutation(5,5))
+n = int(input("To calculate permutation please enter n : "))
+r = int(input("To calculate permutation please enter r : "))
+print(f"Permutation of ({n},{r}) is {permutation(n,r)}")
