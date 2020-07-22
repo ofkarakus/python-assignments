@@ -32,3 +32,18 @@ for i in average_dict:
         print(f'{i} has maximum average with {max_criterion} between all of the students.')
     if min_criterion == average_dict[i]:
         print(f'{i} has minimum average with {min_criterion} between all of the students.')
+
+print()
+
+# second answer
+
+avg_dict = {}
+for i in students:
+    total = 0
+    for j in students[i].values():
+        total += j
+    else:
+        avg_dict.update({total/len(students[i].keys()) : i })
+
+print(f'{avg_dict[min(avg_dict)]} has minimum average with {min(avg_dict)} between all of the students.')
+print(f'{avg_dict[max(avg_dict)]} has minimum average with {max(avg_dict)} between all of the students.')
