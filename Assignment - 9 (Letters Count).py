@@ -9,3 +9,17 @@
 # counts the number of each letter of the sentence,
 # collects the letters/chars as a key and the counted numbers as a value in a 
 # dictionary.
+
+sentence = input('Enter a sentence : ')
+counter = 0
+result = {}
+
+for i in sentence:
+    for j in range(len(sentence)):
+        if i == sentence[j]:
+            counter += 1
+    else:
+        result.update({i : counter})
+        counter = 0
+
+print(result)
