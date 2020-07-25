@@ -23,3 +23,12 @@ for i in sentence:
         counter = 0
 
 print(result)
+
+# second answer
+
+sentence = input('Enter a sentence : ')
+result = []
+
+for i in sentence:
+    result.append([i , sentence.count(i)])
+print(dict(result))
