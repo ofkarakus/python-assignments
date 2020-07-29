@@ -9,3 +9,9 @@ def my_min(*num):
         if i < temp:
             temp = i
     return temp
+
+# Tests
+
+print(my_min(5,6,7))
+print(my_min(3,8,-9,0,12,1.2,-79))
+print(my_min(-100))
