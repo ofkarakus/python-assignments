@@ -10,25 +10,36 @@
 # collects the letters/chars as a key and the counted numbers as a value in a 
 # dictionary.
 
-sentence = input('Enter a sentence : ')
+sentence_1 = input('Enter a sentence : ')
 counter = 0
-result = {}
+result_1 = {}
 
-for i in sentence:
-    for j in range(len(sentence)):
-        if i == sentence[j]:
+for i in sentence_1:
+    for j in range(len(sentence_1)):
+        if i == sentence_1[j]:
             counter += 1
     else:
-        result.update({i : counter})
+        result_1[i] = counter  # second way to update dict.
         counter = 0
 
-print(result)
+print(result_1)
 
 # second answer
 
-sentence = input('Enter a sentence : ')
-result = []
+sentence_2 = input('Enter a sentence : ')
+result_2 = []
 
-for i in sentence:
-    result.append([i , sentence.count(i)])
-print(dict(result))
+for i in sentence_2:
+    result_2.append([i , sentence_2.count(i)])
+print(dict(result_2))
+
+# third answer
+
+sentence_3 = input('Enter a sentence : ')
+result_3 = {}
+
+for i in sentence_3:
+    if i in result_3.keys():
+        result_3[i] += 1
+    else: result_3[i] = 1
+print(result_3)
